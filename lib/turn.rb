@@ -1,6 +1,6 @@
 
 
-
+#Display a tic tac toe board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -9,10 +9,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+#convert user input to index by subtracting 1
 def input_to_index(user_input)
 "#{user_input}".to_i - 1
 end
 
+#checks the user_input to see if that position is taken and it is a valid number
 def position_taken?(board, index)
     if board[index] == ' ' || board[index] == '' || board[index] == nil
         false
