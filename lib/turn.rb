@@ -32,7 +32,7 @@ end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def move(board, index, value = "X")
-  array[board] = value
+  array[index] = value
 end
 
 def turn(board)
